@@ -1,0 +1,3 @@
+vab: sqrt(-16/3*(s-100)+2500)$
+solve(integrate(1/vab,s,s0,400) = 2, s0)$
+Δs:400.0-%;

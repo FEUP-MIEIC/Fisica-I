@@ -1,0 +1,20 @@
+xt: 2.5*t^3-62*t^2+10.3*t$
+print("a)")$
+vt: diff(xt,t)$
+at: diff(vt,t)$
+print("v(t) = ", vt)$
+print("a(t) = ", at)$
+
+
+print("b)")$
+float(solve(vt=0, t));
+t1: 0.08348608424980075$
+t2: 16.44984724908353$
+print("a(", t1, ") = ", subst(t=t1, at))$print("x(", t1, ") = ", subst(t=t1,xt))$
+print("a(", t2, ") = ", subst(t=t2,at))$print("x(", t2, ") = ", subst(t=t2,xt))$
+
+
+print("c)")$
+plot2d([xt,vt,at], [t,0,20])$
+
+

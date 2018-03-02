@@ -1,0 +1,10 @@
+v0: 3e2$
+g: 9.78e2$
+/*
+Seja o referencial com origem no ponto imediatamente antes do berlinde iniciar movimento em queda livre
+Seja k um fator constante positivo que relaciona x e y, que representa o degrau.
+Ou seja, se 0<k<1, então o berlinde cai no primeiro degrau. Se 1<k<2, segundo degrau. Etc
+*/
+solve([30*k=v0*t, 18*k=0.5*g*t^2], [k,t]);
+
+

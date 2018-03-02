@@ -1,0 +1,12 @@
+v0: 15$
+alfa: 56.3*%pi/180$
+g: 9.8$
+/*as soluções estão erradas no Livro (pdf) */
+print("a)")$
+y: 7+v0*sin(alfa)*t-0.5*g*t^2$
+float(solve(y=0));
+
+print("b)")$
+x: float(v0*cos(alfa)*3.02);
+
+
