@@ -1,0 +1,11 @@
+v(r, an) := float(sqrt(an*r))$ /* velocidade maxima => an = v^2 / R */
+tc(r, an) := float(%pi*r/v(r, an))$ /* tempo que demora a fazer a trajetoria semi-circular */
+
+rB: 102$
+rA: 82$
+an: 0.8*9.8$
+
+print("tA: ", tc(rA, an) + 40/v(rA, an))$
+print("tB: ", tc(rB, an))$
+
+
