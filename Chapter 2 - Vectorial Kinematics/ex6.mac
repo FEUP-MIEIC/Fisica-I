@@ -1,0 +1,25 @@
+a: [0, -9.8]$
+theta: 20*%pi/180$
+v0: 4*[cos(theta), -sin(theta)]$
+v: integrate(a,t,0,t)+v0$
+r0: [0,6]$
+r: integrate(v,t,0,t)+r0$
+
+float(a);
+float(v);
+float(r);
+
+print("a)")$
+print("t: ", float(solve(r[2]=0.0, t)))$
+tqueda: 0.97574$
+
+print("b)")$
+print("x: ", float(subst(t=tqueda, r[1])))$
+
+print("c)")$
+vi: abs(subst(t=tqueda, v[1]))$
+vj: abs(subst(t=tqueda, v[2]))$
+alfa: float(atan(vi/abs(vj)) * 180/%pi)$ /*result is in rad, convert to degrees*/
+print("alfa: ", alfa)$
+
+

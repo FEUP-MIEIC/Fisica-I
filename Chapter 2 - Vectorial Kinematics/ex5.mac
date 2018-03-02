@@ -1,0 +1,10 @@
+a: [0,-9.8]$
+alfa: 30*%pi/180$
+v0: vi*[cos(alfa), sin(alfa)]$
+v: integrate(a, t, 0, t)+v0;
+r: integrate(v,t,0,t);
+solve(r[2]=0, t);
+tqueda: 5/49*vi;
+float(solve(subst(t=tqueda, r[1])=30));
+
+

@@ -1,0 +1,21 @@
+a: [3,4,-5]$
+b: [-1,2,6]$
+
+print("a)")$
+modA: sqrt(a.a);
+modB: sqrt(b.b);
+
+print("b)")$
+a.b;
+
+print("c)") $
+float(acos(a.b/(modA*modB))*180.0/%pi);
+
+print("d)")$
+a+b;
+
+print("e)")$
+a-b;
+
+
+

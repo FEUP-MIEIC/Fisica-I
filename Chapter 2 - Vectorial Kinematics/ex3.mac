@@ -1,0 +1,14 @@
+v: [3*%e^(-2*t), -5*%e^(-t)]$
+r: integrate(v, t, 0, t) + [0, 2]$
+print("a)")$
+print("instante t para y=0", solve(r[2]=0, t))$ /* t ~ 0.5108 */
+print("r(0.5108) = ", subst(t=log(5.0/3), r))$
+
+
+print("b)")$
+a: diff(v,t)$
+print("a(0) = ", subst(t=0, a))$
+print("a(0.5108)", subst(t=log(5.0/3), a))$
+
+
+
